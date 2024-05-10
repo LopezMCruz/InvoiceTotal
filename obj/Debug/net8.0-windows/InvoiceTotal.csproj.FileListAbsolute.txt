@@ -1,0 +1,14 @@
+C:\Users\CruzC\REPO\c#\InvoiceTotal\bin\Debug\net8.0-windows\InvoiceTotal.exe
+C:\Users\CruzC\REPO\c#\InvoiceTotal\bin\Debug\net8.0-windows\InvoiceTotal.deps.json
+C:\Users\CruzC\REPO\c#\InvoiceTotal\bin\Debug\net8.0-windows\InvoiceTotal.runtimeconfig.json
+C:\Users\CruzC\REPO\c#\InvoiceTotal\bin\Debug\net8.0-windows\InvoiceTotal.dll
+C:\Users\CruzC\REPO\c#\InvoiceTotal\bin\Debug\net8.0-windows\InvoiceTotal.pdb
+C:\Users\CruzC\REPO\c#\InvoiceTotal\obj\Debug\net8.0-windows\InvoiceTotal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CruzC\REPO\c#\InvoiceTotal\obj\Debug\net8.0-windows\InvoiceTotal.AssemblyInfoInputs.cache
+C:\Users\CruzC\REPO\c#\InvoiceTotal\obj\Debug\net8.0-windows\InvoiceTotal.AssemblyInfo.cs
+C:\Users\CruzC\REPO\c#\InvoiceTotal\obj\Debug\net8.0-windows\InvoiceTotal.csproj.CoreCompileInputs.cache
+C:\Users\CruzC\REPO\c#\InvoiceTotal\obj\Debug\net8.0-windows\InvoiceTotal.dll
+C:\Users\CruzC\REPO\c#\InvoiceTotal\obj\Debug\net8.0-windows\refint\InvoiceTotal.dll
+C:\Users\CruzC\REPO\c#\InvoiceTotal\obj\Debug\net8.0-windows\InvoiceTotal.pdb
+C:\Users\CruzC\REPO\c#\InvoiceTotal\obj\Debug\net8.0-windows\InvoiceTotal.genruntimeconfig.cache
+C:\Users\CruzC\REPO\c#\InvoiceTotal\obj\Debug\net8.0-windows\ref\InvoiceTotal.dll
