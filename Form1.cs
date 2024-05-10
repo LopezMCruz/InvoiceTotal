@@ -6,13 +6,16 @@ public partial class Form1 : Form
     {
         InitializeComponent();
         TextBox textBox = new TextBox();
-        textBox.Width = 100;
+        Label subtotalLabel = new Label();
+        
+        textBox.Name = "txtSubTotal";
+        textBox.TabIndex = 1;
+        
+        subtotalLabel.Text = "&Subtotal";
+        subtotalLabel.TextAlign = ContentAlignment.MiddleLeft;
+        subtotalLabel.TabIndex = 0;
         this.Controls.Add(textBox);
-    }
-
-    private void Button_Click(object? sender, EventArgs e)
-    {
-        MessageBox.Show("Button clicked!");
+        this.Controls.Add(subtotalLabel);
     }
 
 }
