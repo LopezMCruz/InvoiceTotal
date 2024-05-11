@@ -5,7 +5,6 @@ public partial class Form1 : Form
     private TextBox txtSubtotal = new TextBox();
     private TextBox txtTotal = new TextBox();
     private TextBox txtDiscountAmount = new TextBox();
-
     private TextBox txtDiscountPercent = new TextBox();
     public Form1()
     {
@@ -73,7 +72,70 @@ public partial class Form1 : Form
 
 
 
-        void Calculate_Click(object? sender, EventArgs e)
+        
+        panel.Controls.Add(subtotalLabel, 0, 0);
+        panel.Controls.Add(txtSubtotal, 1, 0);
+        panel.Controls.Add(discountPercentLabel, 0, 1);
+        panel.Controls.Add(txtDiscountPercent, 1, 1);
+        panel.Controls.Add(discountAmountLabel, 0, 2);
+        panel.Controls.Add(txtDiscountAmount, 1, 2);
+        panel.Controls.Add(totalLabel, 0, 3);
+        panel.Controls.Add(txtTotal, 1, 3);
+        panel.Controls.Add(calculate, 0, 4);
+        panel.Controls.Add(exit, 1, 4);
+
+
+        this.Controls.Add(panel);
+    }
+
+    private void InitializeUI()
+    {
+        // create main panel here
+        TableLayoutPanel mainPanel = new TableLayoutPanel();
+
+        AddControl(mainPanel, CreateLabel("&Subtotal"), 0, 0);
+        AddControl(mainPanel, CreateTextBox(false, "txtSubtotal"), 1, 0);
+    }
+
+    private Label CreateLabel(string text)
+    {
+        return new Label
+        {
+            Text = text,
+            TextAlign = ContentAlignment.TopLeft,
+            Dock = DockStyle.Fill,
+            AutoSize = true
+        };
+    }
+
+    private TextBox CreateTextBox(bool readOnly, string name)
+    {
+        return new TextBox
+        {
+            ReadOnly = readOnly,
+            Name = name,
+            Dock = DockStyle.Fill
+        };
+    }
+
+    private void AddControl(TableLayoutPanel panel, Control control, int column, int row)
+    {
+        panel.Controls.Add(control, column, row);
+    }
+
+    private void AttachEventHandlers()
+    {
+        Console.Write("DO THIS LATER");
+        //btnCalculate.Click += Calculate_Click;
+        //btnExit.Click += Exit_Click;
+    }
+
+    private void Exit_Click(object? sender, EventArgs e)
+    {
+        this.Close();
+    }
+
+    private void Calculate_Click(object? sender, EventArgs e)
         {
             if (decimal.TryParse(txtSubtotal.Text, out decimal subtotal))
             {
@@ -108,24 +170,4 @@ public partial class Form1 : Form
                 MessageBox.Show("Please enter a valid input.");
             }
         }
-        panel.Controls.Add(subtotalLabel, 0, 0);
-        panel.Controls.Add(txtSubtotal, 1, 0);
-        panel.Controls.Add(discountPercentLabel, 0, 1);
-        panel.Controls.Add(txtDiscountPercent, 1, 1);
-        panel.Controls.Add(discountAmountLabel, 0, 2);
-        panel.Controls.Add(txtDiscountAmount, 1, 2);
-        panel.Controls.Add(totalLabel, 0, 3);
-        panel.Controls.Add(txtTotal, 1, 3);
-        panel.Controls.Add(calculate, 0, 4);
-        panel.Controls.Add(exit, 1, 4);
-
-
-        this.Controls.Add(panel);
-    }
-
-    private void Exit_Click(object? sender, EventArgs e)
-    {
-        this.Close();
-    }
-
 }
