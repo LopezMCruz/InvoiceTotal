@@ -123,7 +123,8 @@ public partial class Form1 : Form
         this.Controls.Add(panel);
     }
 
-    private void Exit_Click(object? sender, EventArgs e){
+    private void Exit_Click(object? sender, EventArgs e)
+    {
         this.Close();
     }
 
